@@ -41,7 +41,7 @@ function Header() {
     window.addEventListener('scroll', ChangeBg)
   })
   const items = [
-    <div className='relative h-[700px] lg:h-[600px]'>
+    <div key={0} className='relative h-[700px] lg:h-[600px]'>
       <Image
         src='/images/1-scaled-1.jpg'
         objectFit='cover'
@@ -49,7 +49,7 @@ function Header() {
         className=' hover:scale-100 transition ease-in-out duration-1000  '
       />
     </div>,
-    <div className='relative h-[700px] lg:h-[590px]'>
+    <div key={1} className='relative h-[700px] lg:h-[590px]'>
       <Image
         src='/images/2-scaled-1.jpg'
         objectFit='cover'
@@ -182,7 +182,7 @@ function Header() {
           Solution has always preserved a bunch of effective, efficient
           strategies for technology consulting services to abet enterprises in
           tech risk management, with a special focus on enhancing process
-          performance and minimizing downtime's.
+          performance and minimizing downtimes.
         </p>
         <div className='pt-5 flex gap-3'>
           <button className='bg-[#FF0000] px-3 py-2 rounded-md'>

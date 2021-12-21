@@ -4,7 +4,7 @@ import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 function Consulting() {
   const items = [
-    <div className='relative h-[400px] lg:h-[400px]'>
+    <div key={0} className='relative h-[400px] lg:h-[400px]'>
       <Image
         src='/images/SecondSlider_1-1-scaled-1.jpg'
         objectFit='cover'
@@ -12,7 +12,7 @@ function Consulting() {
         className=' hover:scale-100 transition ease-in-out duration-1000  '
       />
     </div>,
-    <div className='relative h-[400px] lg:h-[400px]'>
+    <div key={1} className='relative h-[400px] lg:h-[400px]'>
       <Image
         src='/images/SecondSlider_2-1-scaled-1.jpg'
         objectFit='cover'
@@ -20,7 +20,7 @@ function Consulting() {
         className=' hover:scale-100 transition ease-in-out duration-1000  '
       />
     </div>,
-    <div className='relative h-[400px] lg:h-[400px]'>
+    <div key={3} className='relative h-[400px] lg:h-[400px]'>
       <Image
         src='/images/SecondSlider_3-1-scaled-1.jpg'
         objectFit='cover'

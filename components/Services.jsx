@@ -57,7 +57,7 @@ function Services() {
                 Proof Of Concept / Pilot
               </h2>
               <p className='text-[#999999] max-w-[500px]'>
-                Our AI and RPA SME's will swiftly build functional BOTs (RPA or
+                Our AI and RPA SMEs will swiftly build functional BOTs (RPA or
                 Chat BOT) to demonstrate feasibility and our team
                 capability.This will help evaluate the ROI accurately to make
                 strategic decision about introducing AI and RPA solution in your
