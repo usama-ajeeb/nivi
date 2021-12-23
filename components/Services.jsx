@@ -10,7 +10,7 @@ import {
 
 function Services() {
   return (
-    <div className=' lg:max-w-[1080px] flex flex-col ml-auto mr-auto bg-[#FFFFFF] shadow-sm'>
+    <div className=' lg:max-w-[1080px] flex flex-col ml-auto mr-auto bg-[#FFFFFF]  scroll-pt-4 '>
       <div className='max-w-[500px] md:max-w-[1000px]'>
         <h1 className='text-4xl font-extrabold text-[#333333] '>
           RPA SERVICES

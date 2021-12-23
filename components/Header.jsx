@@ -6,13 +6,12 @@ import Typist from 'react-typist'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link'
+
 function Header() {
   //   navbarStates
   const [navbar, setNavbar] = useState(false)
   const [count, setCount] = useState(200)
   const [toggler, setToggler] = useState(false)
-
-  console.log(toggler)
 
   const fireToggler = (e) => {
     e.preventDefault()
@@ -24,8 +23,6 @@ function Header() {
   }
 
   useEffect(() => {
-    // document.title = `You clicked ${count} times`;
-    console.log('Count: ' + count)
     setCount(1)
   }, [count])
   const ChangeBg = () => {
@@ -46,7 +43,7 @@ function Header() {
         src='/images/1-scaled-1.jpg'
         objectFit='cover'
         layout='fill'
-        className=' hover:scale-100 transition ease-in-out duration-1000  '
+        className=' hover:scale-100 transition ease-in-out duration-1000   '
       />
     </div>,
     <div key={1} className='relative h-[700px] lg:h-[590px]'>
@@ -63,20 +60,24 @@ function Header() {
     <headr className=''>
       <hr className=' fixed w-screen pt-2 z-50  border-t-2 border-red-600' />
       <nav
-        className={`fixed flex bg-white lg:transparent items-center px-9 w-screen justify-evenly pt-4  z-20 ${
-          navbar ? `bg-white shadow-lg` : `bg-transparent`
+        className={`fixed flex bg-white items-center px-9 w-screen justify-evenly pt-4  z-20 ${
+          navbar ? `bg-white shadow-lg` : `bg-transparent `
         }`}
       >
         {/* Logo */}
-        <div className='relative h-[90px] w-[185px]'>
-          <Image
-            src={
-              navbar ? `/images/logo-v3-black.png` : `/images/logo-v3-white.png`
-            }
-            layout='fill'
-            objectFit='contain'
-          />
-        </div>
+        <Link href={'/'}>
+          <div className='relative h-[90px] w-[185px] cursor-pointer'>
+            <Image
+              src={
+                navbar
+                  ? `/images/logo-v3-black.png`
+                  : `/images/logo-v3-white.png`
+              }
+              layout='fill'
+              objectFit='contain'
+            />
+          </div>
+        </Link>
         {/* Items */}
         {/* Mobile menu */}
         <div
@@ -86,12 +87,26 @@ function Header() {
               : 'hidden'
           }`}
         >
-          <p className='bg-red-600 text-white px-1  pb-2'>HOME</p>
-          <p className=' pb-2 hover:text-white hover:bg-red-600'>RPA</p>
-          <p className=' pb-2 hover:text-white hover:bg-red-600'>ABOUT US </p>
-          <p className=' pb-2 hover:text-white hover:bg-red-600'>CONSULTING</p>
+          <Link href={'#HOME'}>
+            <p className='bg-red-600 text-white px-1  pb-2'>HOME</p>
+          </Link>
+          <Link href={'#SERVICES'}>
+            <p className=' pb-2 hover:text-white hover:bg-red-600'>RPA</p>
+          </Link>
+          <Link href={'#ABOUT'}>
+            <p className=' pb-2 hover:text-white hover:bg-red-600'>ABOUT US </p>
+          </Link>
+          <Link href={'#CONSULT'}>
+            <p className=' pb-2 hover:text-white hover:bg-red-600'>
+              CONSULTING
+            </p>
+          </Link>
           <p className=' pb-2 hover:text-white hover:bg-red-600'>BLOG</p>
-          <p className='  pb-2 hover:text-white hover:bg-red-600'>CONTACT US</p>
+          <Link href={'#CONTACT'}>
+            <p className='  pb-2 hover:text-white hover:bg-red-600'>
+              CONTACT US
+            </p>
+          </Link>
         </div>
         {/* end mobile menu */}
         <div
@@ -110,27 +125,37 @@ function Header() {
           } hidden  lg:flex space-x-4 font-extrabold cursor-pointer `}
         >
           <Link href={'#HOME'}>
-            <p className=' hover:-translate-y-2 transition hover:text-[#FF0000]'>
+            <p
+              className={` hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000] active:text-[#FF0000]
+       
+                `}
+            >
               HOME
             </p>
           </Link>
           <Link href={'#SERVICES'}>
-            <p className=' hover:-translate-y-2 transition hover:text-[#FF0000]'>
+            <p className=' hover:-translate-y-2 transform-gpu transition-transform delay-100  hover:text-[#FF0000]'>
               RPA
             </p>
           </Link>
-          <p className=' hover:-translate-y-2 transition hover:text-[#FF0000]'>
-            ABOUT US{' '}
-          </p>
-          <p className=' hover:-translate-y-2 transition hover:text-[#FF0000]'>
-            CONSULTING
-          </p>
-          <p className='hover:-translate-y-2 transition hover:text-[#FF0000]'>
+          <Link href={'#ABOUT'}>
+            <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000]'>
+              ABOUT US{' '}
+            </p>
+          </Link>
+          <Link href={'#CONSULT'}>
+            <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000]'>
+              CONSULTING
+            </p>
+          </Link>
+          <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000]'>
             BLOG
           </p>
-          <p className='hover:-translate-y-2 transition  hover:text-[#FF0000]'>
-            CONTACT US
-          </p>
+          <Link href={'#CONTACT'}>
+            <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100  hover:text-[#FF0000]'>
+              CONTACT US
+            </p>
+          </Link>
         </div>
       </nav>
 

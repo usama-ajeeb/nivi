@@ -37,8 +37,7 @@ function Consulting() {
           autoPlay
           autoPlayStrategy='none'
           autoPlayInterval={1000}
-          animationDuration={2000}
-          //   animationType='fadeout'
+          animationDuration={500}
           autoPlayDirection='rtl'
           infinite
           touchTracking={false}
