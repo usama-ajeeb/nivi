@@ -55,20 +55,22 @@ function Navbar() {
             : 'hidden'
         }`}
       >
-        <Link href={'#HOME'}>
+        <Link href={'/#HOME'}>
           <p className='bg-red-600 text-white px-1  pb-2'>HOME</p>
         </Link>
-        <Link href={'#SERVICES'}>
+        <Link href={'/#SERVICES'}>
           <p className=' pb-2 hover:text-white hover:bg-red-600'>RPA</p>
         </Link>
-        <Link href={'#ABOUT'}>
+        <Link href={'/#ABOUT'}>
           <p className=' pb-2 hover:text-white hover:bg-red-600'>ABOUT US </p>
         </Link>
-        <Link href={'#CONSULT'}>
+        <Link href={'/#CONSULT'}>
           <p className=' pb-2 hover:text-white hover:bg-red-600'>CONSULTING</p>
         </Link>
-        <p className=' pb-2 hover:text-white hover:bg-red-600'>BLOG</p>
-        <Link href={'#CONTACT'}>
+        <Link href={'/blog'}>
+          <p className=' pb-2 hover:text-white hover:bg-red-600'>BLOG</p>
+        </Link>
+        <Link href={'/#CONTACT'}>
           <p className='  pb-2 hover:text-white hover:bg-red-600'>CONTACT US</p>
         </Link>
       </div>
@@ -88,7 +90,7 @@ function Navbar() {
           navbar ? 'text-black' : 'text-white'
         } hidden  lg:flex space-x-4 font-extrabold cursor-pointer `}
       >
-        <Link href={'#HOME'}>
+        <Link href={'/#HOME'}>
           <p
             className={` hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000] active:text-[#FF0000]
        
@@ -97,25 +99,27 @@ function Navbar() {
             HOME
           </p>
         </Link>
-        <Link href={'#SERVICES'}>
+        <Link href={'/#SERVICES'}>
           <p className=' hover:-translate-y-2 transform-gpu transition-transform delay-100  hover:text-[#FF0000]'>
             RPA
           </p>
         </Link>
-        <Link href={'#ABOUT'}>
+        <Link href={'/#ABOUT'}>
           <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000]'>
             ABOUT US{' '}
           </p>
         </Link>
-        <Link href={'#CONSULT'}>
+        <Link href={'/#CONSULT'}>
           <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000]'>
             CONSULTING
           </p>
         </Link>
-        <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000]'>
-          BLOG
-        </p>
-        <Link href={'#CONTACT'}>
+        <Link href={'/blog'}>
+          <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000]'>
+            BLOG
+          </p>
+        </Link>
+        <Link href={'/#CONTACT'}>
           <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100  hover:text-[#FF0000]'>
             CONTACT US
           </p>

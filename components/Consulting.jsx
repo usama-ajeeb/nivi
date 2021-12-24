@@ -2,49 +2,27 @@ import Image from 'next/image'
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
+//
+import Slider from '@madzadev/image-slider'
+// import 'image-slider/dist/index.css'
 
 function Consulting() {
-  const items = [
-    <div key={0} className='relative h-[400px] lg:h-[400px]'>
-      <Image
-        src='/images/SecondSlider_1-1-scaled-1.jpg'
-        objectFit='cover'
-        layout='fill'
-        className=' hover:scale-100 transition ease-in-out duration-1000  '
-      />
-    </div>,
-    <div key={1} className='relative h-[400px] lg:h-[400px]'>
-      <Image
-        src='/images/SecondSlider_2-1-scaled-1.jpg'
-        objectFit='cover'
-        layout='fill'
-        className=' hover:scale-100 transition ease-in-out duration-1000  '
-      />
-    </div>,
-    <div key={3} className='relative h-[400px] lg:h-[400px]'>
-      <Image
-        src='/images/SecondSlider_3-1-scaled-1.jpg'
-        objectFit='cover'
-        layout='fill'
-        className=' hover:scale-100 transition ease-in-out duration-1000  '
-      />
-    </div>,
+  const images = [
+    { url: '/images/SecondSlider_1-1-scaled-1.jpg' },
+    { url: '/images/SecondSlider_2-1-scaled-1.jpg' },
+    { url: '/images/SecondSlider_3-1-scaled-1.jpg' },
   ]
   return (
     <div className=' shadow-lg flex flex-col xl:flex-row '>
       {/* Left */}
       <div className='max-w-[800px]'>
-        <AliceCarousel
-          autoPlay
-          autoPlayStrategy='none'
-          autoPlayInterval={1000}
-          animationDuration={500}
-          autoPlayDirection='rtl'
-          infinite
-          touchTracking={false}
-          disableDotsControls
-          disableButtonsControls
-          items={items}
+        <Slider
+          imageList={images}
+          width={1000}
+          height={400}
+          showArrowControls={false}
+          showDotControls={false}
+          autoPlayInterval={1500}
         />
       </div>
       {/* Right */}
