@@ -48,7 +48,7 @@ function Contact() {
           rows='10'
         ></textarea>
         <button
-          className='flex items-center gap-x-2 hover:opacity-80 text-white hover:bg-red-900 px-40 py-1 rounded-2xl'
+          className='flex items-center gap-x-2 hover:opacity-80 text-white hover:bg-red-900 px-10npm install slick-carousel --save py-1 rounded-2xl'
           type='submit'
           disabled={state.submitting}
         >

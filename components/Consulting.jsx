@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
+
 function Consulting() {
   const items = [
     <div key={0} className='relative h-[400px] lg:h-[400px]'>
@@ -32,7 +33,7 @@ function Consulting() {
   return (
     <div className=' shadow-lg flex flex-col xl:flex-row '>
       {/* Left */}
-      <div className='max-w-[1000px]'>
+      <div className='max-w-[800px]'>
         <AliceCarousel
           autoPlay
           autoPlayStrategy='none'

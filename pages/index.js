@@ -44,22 +44,6 @@ export default function Home() {
       </section>
       <footer className='bg-black'>
         <Footer />
-        <div className='flex flex-col items-center py-4 gap-y-3 lg:flex-row justify-evenly text-[14px] bg-[#181B1D] text-white opacity-70'>
-          <p>
-            Copyright {new Date().getFullYear()} © Nivi Tech Solution | All
-            Rights Reserved
-          </p>
-          <div className='flex items-center gap-4'>
-            <FaFacebookF />
-            <BsTwitter />
-            <AiOutlineGooglePlus />
-            <FaLinkedinIn />
-          </div>
-          <div className='flex items-center gap-x-2'>
-            <p>Privacy Policy</p>
-            <p>Terms</p>
-          </div>
-        </div>
       </footer>
     </div>
   )
