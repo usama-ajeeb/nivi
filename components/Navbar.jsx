@@ -114,11 +114,11 @@ function Navbar() {
             CONSULTING
           </p>
         </Link>
-        <Link href={'/blog'}>
+        {/* <Link href={'/blog'}>
           <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100 hover:text-[#FF0000]'>
             BLOG
           </p>
-        </Link>
+        </Link> */}
         <Link href={'/#CONTACT'}>
           <p className='hover:-translate-y-2 transform-gpu transition-transform delay-100  hover:text-[#FF0000]'>
             CONTACT US
